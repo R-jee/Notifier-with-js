@@ -1,0 +1,86 @@
+.attention-component {
+    width: 100%;
+    max-width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+}
+.attention-component * {
+    margin: 0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+.prompt-elements{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+.attention-component .inner {
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+.attention-component .inner-container {
+    background-color: #fff;
+}
+.attention-component .close {
+    display:none;
+}
+.attention-component .close path:first-child {
+    fill: #fff;
+}
+.attention-component .title {
+    font-size: 16px;
+    color: #000;
+}
+.attention-component .content {
+    font-size: 14px;
+}
+.attention-component .input {
+    width: 100%;
+    border: 1px solid #f4f4f4;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.attention-component .input:focus {
+    outline-offset: 0;
+    outline: none;
+}
+.attention-component .button {
+    margin-right: 4px;
+    padding: 0.75rem 1rem;
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #3394de;
+    color: #fff;
+}
+.attention-component .buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+.attention-component .cancel,
+.attention-component .confirm {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.attention-component .cancel {
+    background-color: #ef767a;
+    margin-right: 10px;
+}
+.attention-component .confirm {
+    background-color: #25b686;
+    margin-left: 10px;
+}
+.head{
+        position: absolute;
+        left: 62px;
+        top: 29px;
+}
